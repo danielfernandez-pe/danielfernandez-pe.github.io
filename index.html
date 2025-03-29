@@ -4,38 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Fernandez</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <h3>Daniel Fernández</h3>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Daniel Fernández</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">My projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="home">
-        <img src="assets/imgs/me-and-lima.jpg" alt="Me and Lima" width="300"/>
-        <h1>Software developer</h1>
-        <p>I like to create new products</p>
-    </div>
-    <div id="about">
-        <p>My name is Daniel and I'm a software developer from Perú living in Czech Republic.</p>
-        <p>I've worked in multiple companies for over 10 years getting the experience to tackle diverse types of problems.</p>
-    </div>
-    <div id="projects">
-        <h2>Some of the projects I worked on</h2>
-        <ul>
-            <li><h3>Wrike</h3></li>
-            <li><h3>Ionity</h3></li>
-            <li><h3>Spiralista</h3></li>
-            <li><h3>Piano Reminder</h3></li>
-        </ul>
-    </div>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Software Developer</h1>
+                <p class="subtitle">I like to create new products</p>
+                <a href="#contact" class="cta-button">Hire Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/imgs/me-and-lima.jpg" alt="Me and Lima" />
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My name is Daniel and I'm a software developer from Perú living in Czech Republic.</p>
+                <p>I've worked in multiple companies for over 10 years getting the experience to tackle diverse types of problems.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Wrike</h3>
+                    <p>Project description goes here</p>
+                </div>
+                <div class="project-card">
+                    <h3>Ionity</h3>
+                    <p>Project description goes here</p>
+                </div>
+                <div class="project-card">
+                    <h3>Spiralista</h3>
+                    <p>Project description goes here</p>
+                </div>
+                <div class="project-card">
+                    <h3>Piano Reminder</h3>
+                    <p>Project description goes here</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <p>Get in touch for opportunities or collaboration</p>
+                <!-- Add your contact information or form here -->
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>Copyright</p>
+        <p>&copy; 2024 Daniel Fernández. All rights reserved.</p>
     </footer>
 </body>
 </html>
