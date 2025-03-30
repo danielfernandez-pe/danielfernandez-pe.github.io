@@ -116,14 +116,148 @@ body {
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
 }
 
 .about-content p {
-    margin-bottom: 1rem;
     font-size: 1.1rem;
     color: #636e72;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Experience Section */
+.experience-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #2d3436;
+}
+
+.experience-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.experience-item {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.company-logo {
+    width: auto;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.company {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.company-url {
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.company-url:hover {
+    color: #ff6b6b;
+}
+
+.experience-item .role {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.experience-item .period {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.responsibilities {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.responsibilities li {
+    position: relative;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.responsibilities li::before {
+    content: "•";
+    position: absolute;
+    left: -1.5rem;
+    color: #ff6b6b;
+}
+
+/* Responsive adjustments for experience section */
+@media (max-width: 1200px) {
+    .experience-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        padding: 1.25rem;
+    }
+
+    .experience-item::before {
+        left: 1.25rem;
+    }
+
+    .company-header {
+        margin-top: 1.25rem;
+    }
+
+    .experience-item .role {
+        font-size: 1.25rem;
+    }
 }
 
 /* Projects Section */
