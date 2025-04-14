@@ -198,22 +198,84 @@
 
         <section id="projects" class="projects-section">
             <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Wrike</h3>
-                    <p>Project description goes here</p>
+            <div class="projects-carousel">
+                <button class="carousel-button prev-button" aria-label="Previous project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="projects-container">
+                    <div class="project-card active" style="--project-color: #00845E; --project-color-rgb: 74, 144, 226;">
+                        <div class="project-carousel">
+                            <img src="assets/imgs/wrike-app.png" alt="Wrike app screenshot" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Wrike</h3>
+                            <a href="https://apps.apple.com/us/app/wrike-where-work-flows/id890048871" class="app-store-link">View in App Store →</a>
+                            <p>A tool for project management, team planning, and collaboration.</p>
+                            <p>The most complex part of this project was dealing with a large legacy codebase. As a team, we decided to refactor the app using Clean Architecture and modularization. New features were built using SwiftUI and Swift Concurrency to modernize the code and improve maintainability.</p>
+                            <div class="project-tech-separator"></div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">SwiftUI</span>
+                                <span class="tech-tag">Clean Architecture</span>
+                                <span class="tech-tag">Modularization</span>
+                                <span class="tech-tag">Unit and UI testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" style="--project-color: #000034; --project-color-rgb: 0, 184, 148;">
+                        <div class="project-carousel">
+                            <img src="assets/imgs/ionity-app.png" alt="Ionity app screenshot" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Ionity</h3>
+                            <a href="https://apps.apple.com/us/app/ionity/id1551448692" class="app-store-link">View in App Store →</a>
+                            <p>A mobile app that helps electric vehicle drivers locate charging stations across Europe, manage the charging process, make payments, and view their charging history.</p>
+                            <p>I was the lead developer during the development of the app’s first version.</p>
+                            <div class="project-tech-separator"></div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">UIKit</span>
+                                <span class="tech-tag">MapKit</span>
+                                <span class="tech-tag">Core Location</span>
+                                <span class="tech-tag">RxSwift</span>
+                                <span class="tech-tag">MVVM-C</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" style="--project-color: #00DCDF; --project-color-rgb: 255, 118, 117;">
+                        <div class="project-carousel">
+                            <img src="assets/imgs/spiralista-app.png" alt="Spiralista app screenshot" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Spiralista</h3>
+                            <a href="https://apps.apple.com/us/app/spiralista-back-spine-care/id1509466188" class="app-store-link">View in App Store →</a>
+                            <p>An app designed to help users improve their overall health by reducing pain and enhancing muscle function. Users can explore and watch a variety of training videos tailored to their needs.</p>
+                            <p>One of the biggest challenges was implementing smooth offline video playback. I had to manage video syncing and storage efficiently using the local file system to ensure zero delay during playback.</p>
+                            <div class="project-tech-separator"></div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">UIKit</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">File System</span>
+                                <span class="tech-tag">AVFoundation</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Ionity</h3>
-                    <p>Project description goes here</p>
-                </div>
-                <div class="project-card">
-                    <h3>Spiralista</h3>
-                    <p>Project description goes here</p>
-                </div>
-                <div class="project-card">
-                    <h3>Piano Reminder</h3>
-                    <p>Project description goes here</p>
+
+                <button class="carousel-button next-button" aria-label="Next project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="carousel-dots">
+                    <button class="dot active" aria-label="Go to project 1"></button>
+                    <button class="dot" aria-label="Go to project 2"></button>
+                    <button class="dot" aria-label="Go to project 3"></button>
                 </div>
             </div>
         </section>
@@ -230,5 +292,6 @@
     <footer>
         <p>&copy; 2024 Daniel Fernández. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
