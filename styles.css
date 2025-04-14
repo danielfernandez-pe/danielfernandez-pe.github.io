@@ -497,11 +497,62 @@ body {
 .contact-section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #2d3436;
 }
 
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    color: #636e72;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    color: #636e72;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    transform: scale(1.1);
+}
+
+.social-link.linkedin:hover {
+    color: #0077b5;
+    background-color: rgba(0, 119, 181, 0.1);
+}
+
+.social-link.youtube:hover {
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.social-link.github:hover {
+    color: #6e5494;
+    background-color: rgba(110, 84, 148, 0.1);
 }
 
 /* Footer */
